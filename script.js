@@ -13,6 +13,7 @@ function abrir(){
     caseModal.style.display = 'block'
     bg.style.display = 'block'
 }
+
 closeModal.addEventListener('click', fechar)
 btnCancelar.addEventListener('click', fechar)
 function fechar() {
@@ -79,6 +80,7 @@ function novoAluno(){
             situacao : csituacao.value,
         }
 
+        
         cellNumeroReprovados.innerHTML = qtdLinhasReprovados
         cellNomeReprovados.innerHTML = alunoReprovado.nome
         cellTurmaReprovados.innerHTML = `${alunoReprovado.serie}º ${alunoReprovado.turma.toUpperCase()}`
